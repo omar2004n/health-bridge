@@ -92,3 +92,73 @@ WHERE `email` = :email:
 14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 16 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-08 12:23:30 --> ErrorException: Cannot declare class App\Database\Migrations\CreatePatientsTable, because the name is already in use
+[Method: CLI, Route: migrate]
+in APPPATH\Database\Migrations\2024-11-08-122259_CreatePatientsTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-11-08 18:55:01 --> mysqli_sql_exception: Unknown column 'phone' in 'field list' in D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `us...', 0)
+#1 D:\Web-project\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 D:\Web-project\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 D:\Web-project\health-bridge\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 D:\Web-project\health-bridge\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Web-project\health-bridge\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 D:\Web-project\health-bridge\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Web-project\health-bridge\app\Controllers\Auth.php(43): CodeIgniter\Model->insert(Array)
+#8 D:\Web-project\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->store()
+#9 D:\Web-project\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\Web-project\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Web-project\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\Web-project\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\Web-project\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\Web-project\health-bridge\system\rewrite.php(44): require_once('D:\\Web-project\\...')
+#15 {main}
+CRITICAL - 2024-11-08 18:55:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'phone' in 'field list'
+[Method: POST, Route: auth/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (:name:, :email:, :password:, :phone:, :gender:, :address:, :birth_date:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Auth.php(43): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->store()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-08 18:55:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (\'Omar\', \'admin@gmail.com\', \'$2y$10$Nf3SGAPEOoQEByUsj9vV2Ot4VlXBQ2eTAmgGsRzpya8/jnV3plijS\', \'0612345678\', \'male\', \'Agadir\', \'2005-06-07\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (\'Omar\', \'admin@gmail.com\', \'$2y$10$Nf3SGAPEOoQEByUsj9vV2Ot4VlXBQ2eTAmgGsRzpya8/jnV3plijS\', \'0612345678\', \'male\', \'Agadir\', \'2005-06-07\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (:name:, :email:, :password:, :phone:, :gender:, :address:, :birth_date:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Auth.php(43): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->store()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-08 18:55:01 --> [Caused by] mysqli_sql_exception: Unknown column 'phone' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (\'Omar\', \'admin@gmail.com\', \'$2y$10$Nf3SGAPEOoQEByUsj9vV2Ot4VlXBQ2eTAmgGsRzpya8/jnV3plijS\', \'0612345678\', \'male\', \'Agadir\', \'2005-06-07\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (\'Omar\', \'admin@gmail.com\', \'$2y$10$Nf3SGAPEOoQEByUsj9vV2Ot4VlXBQ2eTAmgGsRzpya8/jnV3plijS\', \'0612345678\', \'male\', \'Agadir\', \'2005-06-07\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (\'Omar\', \'admin@gmail.com\', \'$2y$10$Nf3SGAPEOoQEByUsj9vV2Ot4VlXBQ2eTAmgGsRzpya8/jnV3plijS\', \'0612345678\', \'male\', \'Agadir\', \'2005-06-07\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`name`, `email`, `password`, `phone`, `gender`, `address`, `birth_date`) VALUES (:name:, :email:, :password:, :phone:, :gender:, :address:, :birth_date:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Auth.php(43): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')

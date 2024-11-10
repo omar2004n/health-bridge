@@ -6,14 +6,10 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'users'; // Ensure this matches your database table name
-    protected $primaryKey = 'id'; // This should match your primary key
-    protected $allowedFields = [
-        'name', 'email', 'password', 'phone', 'gender', 'address', 'birth_date']; // Ensure these fields exist in your table
+    protected $table = 'users';
+    protected $primaryKey = 'id';
+    protected $allowedFields = ['name', 'email', 'password', 'role', 'created_at', 'updated_at'];
 
-    // Optionally, you can add a method to check for user existence
-    public function getUserByEmail($email)
-    {
-        return $this->where('email', $email)->first();
-    }
+    // Automatically handle timestamps
+    protected $useTimestamps = true;
 }
