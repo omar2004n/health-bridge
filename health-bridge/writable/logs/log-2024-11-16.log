@@ -1,0 +1,105 @@
+ERROR - 2024-11-16 20:14:48 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'health_bridge', 3306, '', 0)
+#1 D:\Web-project\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web-project\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web-project\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web-project\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web-project\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\Web-project\health-bridge\app\Controllers\Auth.php(84): CodeIgniter\BaseModel->first()
+#7 D:\Web-project\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#8 D:\Web-project\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Web-project\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web-project\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\Web-project\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Web-project\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\Web-project\health-bridge\system\rewrite.php(44): require_once('D:\\Web-project\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Web-project\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web-project\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web-project\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web-project\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web-project\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\Web-project\health-bridge\app\Controllers\Auth.php(84): CodeIgniter\BaseModel->first()
+#6 D:\Web-project\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#7 D:\Web-project\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Web-project\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web-project\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Web-project\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Web-project\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Web-project\health-bridge\system\rewrite.php(44): require_once('D:\\Web-project\\...')
+#13 {main}
+CRITICAL - 2024-11-16 20:14:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(84): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-16 20:39:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "appointments/book_appointment.php"
+[Method: GET, Route: book-appointment]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appointments/book_appointment.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('appointments/book_appointment', [], true)
+ 3 APPPATH\Controllers\AppointmentsController.php(36): view('appointments/book_appointment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentsController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentsController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-16 20:40:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "appointments/book_appointment.php"
+[Method: GET, Route: book-appointment]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appointments/book_appointment.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('appointments/book_appointment', [], true)
+ 3 APPPATH\Controllers\AppointmentController.php(36): view('appointments/book_appointment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-16 20:40:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "patient/book_appointment.php"
+[Method: GET, Route: book-appointment]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/book_appointment.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/book_appointment', [], true)
+ 3 APPPATH\Controllers\AppointmentController.php(36): view('patient/book_appointment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-16 20:41:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "patient/book_appointment.php"
+[Method: GET, Route: book-appointment]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('patient/book_appointment.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/book_appointment', [], true)
+ 3 APPPATH\Controllers\AppointmentController.php(36): view('patient/book_appointment', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')

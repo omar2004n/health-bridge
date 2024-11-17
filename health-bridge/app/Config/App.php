@@ -158,6 +158,9 @@ class App extends BaseConfig
      * and the HTTP Strict Transport Security (HSTS) header will be set.
      */
     public bool $forceGlobalSecureRequests = false;
+    public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler';
+    public $sessionSavePath = WRITEPATH . 'session';
+
 
     /**
      * --------------------------------------------------------------------------

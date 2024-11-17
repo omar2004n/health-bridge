@@ -596,7 +596,7 @@ ul {
     <div class="container">
       <header>
         <div class="logo"><img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt=""/><span>Sansa</span></div>
-        <div class="nav"><a href="">Blog</a><a href="">Register</a><a class="active" href="">Login</a></div>
+        <div class="nav"><a href="">Blog</a><a href="/register">Register</a><a class="active" href="/login">Login</a></div>
         <div class="menu"><i class="fa fa-bars"></i></div>
       </header>
       <div class="content">
@@ -688,7 +688,7 @@ ul {
       <div class="col-1">
         <ul>
           <li><a class="header" href="">Medical Advisor</a></li>
-          <li><a href="">Login</a></li>
+          <li><a href="/login">Login</a></li>
           <li><a href="">Dashboard</a></li>
           <li><a href="">Become one</a></li>
         </ul>

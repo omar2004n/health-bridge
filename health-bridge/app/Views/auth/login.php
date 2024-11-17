@@ -3,90 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Login</title>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,900">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            background-color: #f0f2f5;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-            background-color: #e3f2f9;
         }
 
-        .login-box {
-            background-color: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        .login-container {
             max-width: 400px;
             width: 100%;
-            text-align: center;
+            background: white;
+            padding: 2rem;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        h2 {
-            color: #00b894;
-            font-weight: bold;
+        .header-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 20px;
         }
 
+        .header-logo img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        .header-logo span {
+            font-size: 32px;
+            color: #3ed1cc;
+            font-weight: 900;
+        }
+
+        .login-title {
+            text-align: center;
+            font-weight: 900;
+            font-size: 24px;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
         .form-group label {
-            color: #00cec9;
+            font-weight: 400;
+            font-size: 14px;
+            color: #999;
+            display: block;
+            margin-bottom: 5px;
         }
 
-        .form-control {
-            border-color: #55efc4;
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
         }
 
-        .form-control:focus {
-            border-color: #00b894;
-            box-shadow: 0 0 5px rgba(0, 184, 148, 0.5);
+        .login-btn {
+            width: 100%;
+            background-color: #3ed1cc;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .btn-primary {
+        .login-btn:hover {
             background-color: #00b894;
-            border-color: #00b894;
-            transition: background-color 0.3s, transform 0.1s;
         }
 
-        .btn-primary:hover {
-            background-color: #00cec9;
-            transform: scale(1.05);
-        }
-
-        .btn-primary:active {
-            background-color: #55efc4;
-            transform: scale(0.98);
-        }
-
-        a {
-            color: #00cec9;
-        }
-
-        a:hover {
-            color: #81ecec;
-            text-decoration: underline;
+        .forgot-password {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 14px;
+            color: #3ed1cc;
         }
     </style>
 </head>
 <body>
-<div class="login-box">
-    <h2>Login</h2>
-    <?php if (session()->getFlashdata('msg')) : ?>
-        <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
-    <?php endif; ?>
-    <form action="/auth/authenticate" method="post">
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+    <div class="login-container">
+        <div class="header-logo">
+            <img src="https://via.placeholder.com/50" alt="Logo">
+            <span>Health Bridge</span>
         </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Login</button>
-    </form>
-    <p class="mt-3">Don't have an account? <a href="/register">Register here</a></p>
-</div>
+        <h2 class="login-title">Login</h2>
+        <form action="/authenticate" method="POST">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Log In</button>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </form>
+    </div>
 </body>
 </html>

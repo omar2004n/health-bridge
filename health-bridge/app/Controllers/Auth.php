@@ -68,45 +68,42 @@ class Auth extends Controller
     }
 
     public function authenticate()
-    {
-        $session = session();
-        $model = new UserModel();
+{
+    $session = session();
+    $model = new UserModel();
 
-        // Validation rules
-        $rules = [
-            'email' => 'required|valid_email',
-            'password' => 'required|min_length[6]',
-        ];
+    $rules = [
+        'email' => 'required|valid_email',
+        'password' => 'required|min_length[6]',
+    ];
 
-        if ($this->validate($rules)) {
-            $email = $this->request->getVar('email');
-            $password = $this->request->getVar('password');
+    if ($this->validate($rules)) {
+        $email = $this->request->getVar('email');
+        $password = $this->request->getVar('password');
 
-            // Check if user exists
-            $user = $model->where('email', $email)->first();
+        $user = $model->where('email', $email)->first();
 
-            if ($user) {
-                // Verify password
-                if (password_verify($password, $user['password'])) {
-                    $session->set('isLoggedIn', true);
-                    $session->set('userId', $user['id']);
-                    return redirect()->to('/'); // Redirect to root path
-                } else {
-                    // Incorrect password
-                    $session->setFlashdata('msg', 'Incorrect Password');
-                }
-            } else {
-                // User not found
-                $session->setFlashdata('msg', 'Email not found');
-            }
+        if ($user && password_verify($password, $user['password'])) {
+            $session->set([
+                'isLoggedIn' => true,
+                'userId' => $user['id'],
+                'userRole' => $user['role'] ?? 'user',
+            ]);
+
+            return redirect()->to('/book-appointment');
         } else {
-            // Validation failed
-            $session->setFlashdata('msg', 'Validation failed');
+            // Flash error message for invalid credentials
+            $session->setFlashdata('msg', 'Invalid email or password.');
         }
-
-        // Redirect back to login
-        return redirect()->to('/login'); 
+    } else {
+        // Flash validation errors
+        $session->setFlashdata('errors', $this->validator->getErrors());
     }
+
+    return redirect()->to('/login')->withInput(); // Redirect with input data
+}
+
+
 
     public function logout()
     {
