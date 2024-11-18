@@ -72,6 +72,7 @@ class Auth extends Controller
     $session = session();
     $model = new UserModel();
 
+    // Validation rules
     $rules = [
         'email' => 'required|valid_email',
         'password' => 'required|min_length[6]',
@@ -81,16 +82,27 @@ class Auth extends Controller
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
 
+        // Retrieve user from database
         $user = $model->where('email', $email)->first();
 
         if ($user && password_verify($password, $user['password'])) {
+            // Set session data
             $session->set([
                 'isLoggedIn' => true,
                 'userId' => $user['id'],
-                'userRole' => $user['role'] ?? 'user',
+                'userRole' => $user['role'] ?? 'user', // Default to 'user' if no role is set
             ]);
 
-            return redirect()->to('/book-appointment');
+            // Redirect based on user role
+            if ($user['role'] === 'admin') {
+                return redirect()->to('/admin-dashboard'); // Admin dashboard route
+            } elseif ($user['role'] === 'patient') {
+                return redirect()->to('/book-appointment'); // Patient appointment route
+            } else {
+                // Handle unexpected roles
+                $session->setFlashdata('msg', 'Role not recognized. Contact support.');
+                return redirect()->to('/login');
+            }
         } else {
             // Flash error message for invalid credentials
             $session->setFlashdata('msg', 'Invalid email or password.');
@@ -100,9 +112,8 @@ class Auth extends Controller
         $session->setFlashdata('errors', $this->validator->getErrors());
     }
 
-    return redirect()->to('/login')->withInput(); // Redirect with input data
+    return redirect()->to('/login')->withInput(); // Redirect back to login with input data
 }
-
 
 
     public function logout()

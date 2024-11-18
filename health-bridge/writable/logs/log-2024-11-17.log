@@ -1,0 +1,195 @@
+CRITICAL - 2024-11-17 12:01:15 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: Admindashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:02:57 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: Admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:03:23 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: Admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:06:45 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:07:25 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:07:45 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:08:45 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:09:00 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:14:02 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:14:10 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:14:33 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(18): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:14:33 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(18): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-17 12:14:34 --> ErrorException: Undefined variable $admin
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Views\admin\dashboard.php on line 56.
+ 1 APPPATH\Views\admin\dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $admin', 'D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\admin\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(18): view('admin/dashboard')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dashboard()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
