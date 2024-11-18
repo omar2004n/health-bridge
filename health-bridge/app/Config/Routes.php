@@ -15,3 +15,4 @@ $routes->get('book-appointment', 'AppointmentController::index');
 $routes->post('book-appointment', 'AppointmentController::book');
 
 $routes->get('admin-dashboard', 'Admin::dashboard');
+$routes->get('personal-space', 'PatientInterfaceController::index');
