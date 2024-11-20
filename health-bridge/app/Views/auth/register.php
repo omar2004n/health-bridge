@@ -88,7 +88,6 @@
                 <option value="" disabled selected>Select your gender</option>
                 <option value="male" <?= old('gender') == 'male' ? 'selected' : '' ?>>Male</option>
                 <option value="female" <?= old('gender') == 'female' ? 'selected' : '' ?>>Female</option>
-                <option value="other" <?= old('gender') == 'other' ? 'selected' : '' ?>>Other</option>
             </select>
         </div>
 
