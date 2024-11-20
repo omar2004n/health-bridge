@@ -57,6 +57,7 @@ class Auth extends Controller
             $session->setFlashdata('success', 'Registration successful! Please login.');
             return redirect()->to('/login');
         } else {
+            
             $session->setFlashdata('validation', $this->validator);
             return redirect()->to('/register')->withInput();
         }

@@ -50,11 +50,13 @@
 <div class="container mt-5">
     <h2>Register</h2>
 
-    <?php if (session()->getFlashdata('validation')) : ?>
-        <div class="alert alert-danger">
-            <?= session()->getFlashdata('validation')->listErrors() ?>
-        </div>
-    <?php endif; ?>
+                <?php if (isset($validation)): ?>
+                <div class="alert alert-danger">
+                    <?= $validation->listErrors(); ?>
+                </div>
+            <?php endif; ?>
+
+
 
     <form action="/auth/store" method="post">
         <div class="form-group">
