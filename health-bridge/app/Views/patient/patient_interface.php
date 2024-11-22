@@ -104,8 +104,8 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="profile.html" class="dropdown-item">My Profile</a>
-                            <a href="settings.html" class="dropdown-item">Settings</a>
-                            <a href="logout.html" class="dropdown-item">Log Out</a>
+                            <a href="/settings" class="dropdown-item">Settings</a>
+                            <a href="/logout" class="dropdown-item">Log Out</a>
                         </div>
                     </div>
                 </div>
@@ -114,8 +114,92 @@
 
             <!-- Center Section (Dynamic Content) -->
             <div id="content-container" class="container-fluid pt-4 px-4">
-                <!-- Default or Placeholder Content -->
-                <p>Welcome to the Health Bridge Patient Portal. Please select an option from the menu.</p>
+                <!-- Overview Section Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-calendar-check fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Upcoming Appointments</p>
+                                <h6 class="mb-0">2</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-file-medical fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Medical Records</p>
+                                <h6 class="mb-0">12</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-prescription fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Active Prescriptions</p>
+                                <h6 class="mb-0">3</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-heartbeat fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">Health Score</p>
+                                <h6 class="mb-0">85%</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Overview Section End -->
+
+            <!-- Recent Activity Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="bg-light text-center rounded p-4">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Recent Medical Activity</h6>
+                        <a href="medical-history.html">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-start align-middle table-bordered table-hover mb-0">
+                            <thead>
+                                <tr class="text-dark">
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Doctor</th>
+                                    <th scope="col">Department</th>
+                                    <th scope="col">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2024-11-05</td>
+                                    <td>Dr. Sarah Johnson</td>
+                                    <td>Cardiology</td>
+                                    <td>Routine heart check-up</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-10-28</td>
+                                    <td>Dr. Ahmed Khan</td>
+                                    <td>Dermatology</td>
+                                    <td>Skin rash consultation</td>
+                                </tr>
+                                <tr>
+                                    <td>2024-10-15</td>
+                                    <td>Dr. Emily Davis</td>
+                                    <td>Orthopedics</td>
+                                    <td>Follow-up for knee injury</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Recent Activity End -->
+
             </div>
             <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
@@ -142,34 +226,43 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
     $(document).ready(function() {
-        // Handle Sidebar Menu Click
-        $('.nav-item.nav-link').on('click', function(e) {
-            e.preventDefault(); // Prevent default action (navigation)
+    // Handle Sidebar Menu Click
+    $('.nav-item.nav-link').on('click', function(e) {
+        e.preventDefault(); // Prevent default navigation
 
-            var url = $(this).data('url'); // Get the URL from data-url attribute
+        var url = $(this).data('url'); // Get the URL from data-url attribute
 
-            // Show the loading spinner
-            $('#spinner').addClass('show');
+        // Show the loading spinner
+        $('#spinner').addClass('show');
 
-            // Make an AJAX request to load content
-            $.ajax({
-                url: url, // URL to load
-                method: 'GET',
-                success: function(response) {
-                    // Hide the loading spinner
-                    $('#spinner').removeClass('show');
+        // Make an AJAX request to load content
+        $.ajax({
+            url: url, // The URL to load content from
+            method: 'GET',
+            success: function(response) {
+                // Replace the content of #content-container with the new content
+                $('#content-container').html(response);
 
-                    // Replace the content of #content-container with the new content
-                    $('#content-container').html(response);
-                },
-                error: function() {
-                    // Handle errors (optional)
-                    $('#spinner').removeClass('show');
-                    alert("Error loading the page. Please try again.");
-                }
-            });
+                // Update the browser's URL without reloading the page
+                history.pushState(null, '', url);
+
+                // Hide the loading spinner
+                $('#spinner').removeClass('show');
+            },
+            error: function() {
+                // Handle errors (optional)
+                $('#spinner').removeClass('show');
+                alert("Error loading the page. Please try again.");
+            }
         });
     });
+
+    // Handle Back/Forward browser navigation (optional)
+    window.onpopstate = function() {
+        location.reload(); // Reload the page to handle back/forward
+    };
+});
+
     </script>
     <script src="<?= base_url('admin/js/main.js') ?>"></script>
 </body>

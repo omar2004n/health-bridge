@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\AppointmentModel;
+use App\Models\DoctorModel;
 use App\Models\UserModel;
 use CodeIgniter\Controller;
 
@@ -77,12 +78,11 @@ class AppointmentController extends Controller
 
     // Fetch all doctors
     private function getDoctorsList()
-    {
-        $userModel = new UserModel();
-        return $userModel->where('role', 'doctor')->findAll();
-    }
+{
+    $doctorModel = new DoctorModel();
+    return $doctorModel->findAll(); // Fetch all doctors
+}
 
-    // Fetch open time (e.g., from settings or a predefined constant)
     private function getOpenTime()
     {
         return '08:00'; // Example: 8 AM

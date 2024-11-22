@@ -64,6 +64,10 @@ class Auth extends Controller
 
     public function login()
     {
+        $session=session();
+        if ($session->get('isLoggedIn')) {
+            return redirect()->to('/personal-space');
+        }
         return view('auth/login'); // Load the login view
     }
 
@@ -97,7 +101,7 @@ class Auth extends Controller
             if ($user['role'] === 'admin') {
                 return redirect()->to('/admin-dashboard'); // Admin dashboard route
             } elseif ($user['role'] === 'patient') {
-                return redirect()->to('/book-appointment'); // Patient appointment route
+                return redirect()->to('/personal-space'); // Patient appointment route
             } else {
                 // Handle unexpected roles
                 $session->setFlashdata('msg', 'Role not recognized. Contact support.');

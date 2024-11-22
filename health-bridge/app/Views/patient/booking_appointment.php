@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,11 @@
     <link rel="stylesheet" href="/assets/css/style.css"> <!-- External CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-info"> <!-- Bootstrap's bg-info for background color -->
 
     <div class="container py-5">
-        <header class="d-flex justify-content-between align-items-center mb-4">
-            <div class="logo d-flex align-items-center">
-                <img src="https://images.vexels.com/media/users/3/142777/isolated/preview/84711206e52e0d4ff6c793cb476ea264-heartbeat-star-medical-logo-by-vexels.png" alt="Logo" class="me-2" width="50">
-                <span class="text-white fs-2 fw-bold">Sansa</span>
-            </div>
-            <div class="nav">
-                <a href="#" class="text-white text-decoration-none mx-2">Blog</a>
-                <a href="/register" class="text-white text-decoration-none mx-2">Register</a>
-                <a href="/login" class="text-white text-decoration-none mx-2 active">Login</a>
-            </div>
-            <div class="menu">
-                <i class="fa fa-bars text-white fs-3"></i>
-            </div>
-        </header>
+
 
         <h2 class="text-center text-white mb-4">Book an Appointment</h2>
 
@@ -42,12 +31,14 @@
 
             <div class="mb-3">
                 <label for="doctor_id" class="form-label">Select Doctor:</label>
-                <select name="doctor_id" id="doctor_id" class="form-select" required>
-                    <option value="">Choose a Doctor</option>
+                <select name="doctor_id" id="doctor_id" class="form-control">
+                    <option value="">Select a Doctor</option>
                     <?php foreach ($doctors as $doctor): ?>
-                        <option value="<?= $doctor['id'] ?>"><?= $doctor['name'] ?></option>
+                        <option value="<?= $doctor['id']; ?>"><?= $doctor['name']; ?> - <?= $doctor['specialty']; ?>
+                        </option>
                     <?php endforeach; ?>
                 </select>
+
             </div>
 
             <div class="mb-3">
@@ -75,4 +66,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
