@@ -50,11 +50,13 @@
 <div class="container mt-5">
     <h2>Register</h2>
 
-    <?php if (session()->getFlashdata('validation')) : ?>
-        <div class="alert alert-danger">
-            <?= session()->getFlashdata('validation')->listErrors() ?>
-        </div>
-    <?php endif; ?>
+                <?php if (isset($validation)): ?>
+                <div class="alert alert-danger">
+                    <?= $validation->listErrors(); ?>
+                </div>
+            <?php endif; ?>
+
+
 
     <form action="/auth/store" method="post">
         <div class="form-group">
@@ -88,7 +90,6 @@
                 <option value="" disabled selected>Select your gender</option>
                 <option value="male" <?= old('gender') == 'male' ? 'selected' : '' ?>>Male</option>
                 <option value="female" <?= old('gender') == 'female' ? 'selected' : '' ?>>Female</option>
-                <option value="other" <?= old('gender') == 'other' ? 'selected' : '' ?>>Other</option>
             </select>
         </div>
 
