@@ -11,8 +11,11 @@ $routes->get('/register', 'Auth::register');
 $routes->post('/auth/store', 'Auth::store');
 $routes->get('logout', 'Auth::logout');
 
-$routes->get('book-appointment', 'AppointmentController::index');
-$routes->post('book-appointment', 'AppointmentController::book');
+// View and create appointments
+$routes->get('/appointments', 'AppointmentController::index');
+$routes->post('/appointments/book', 'AppointmentController::book');
+
+
 
 $routes->get('admin-dashboard', 'Admin::dashboard');
-$routes->get('personal-space', 'PatientInterfaceController::index');
+$routes->get('/dashboard', 'DashboardController::index');
