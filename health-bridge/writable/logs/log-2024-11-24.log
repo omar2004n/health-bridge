@@ -1,0 +1,303 @@
+ERROR - 2024-11-24 10:14:20 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'health_bridge', 3306, '', 0)
+#1 D:\Web-project\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Web-project\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Web-project\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Web-project\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Web-project\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\Web-project\health-bridge\app\Controllers\Auth.php(91): CodeIgniter\BaseModel->first()
+#7 D:\Web-project\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#8 D:\Web-project\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Web-project\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Web-project\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\Web-project\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\Web-project\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\Web-project\health-bridge\system\rewrite.php(44): require_once('D:\\Web-project\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Web-project\health-bridge\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\Web-project\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Web-project\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Web-project\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\Web-project\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Web-project\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\Web-project\health-bridge\app\Controllers\Auth.php(91): CodeIgniter\BaseModel->first()
+#6 D:\Web-project\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#7 D:\Web-project\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 D:\Web-project\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Web-project\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\Web-project\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\Web-project\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\Web-project\health-bridge\system\rewrite.php(44): require_once('D:\\Web-project\\...')
+#13 {main}
+CRITICAL - 2024-11-24 10:14:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(91): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:16:53 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:17:16 --> ErrorException: Undefined variable $doctors
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 60.
+ 1 APPPATH\Views\patient\my_appointments.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $doctors', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:17:17 --> ErrorException: Undefined variable $doctors
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 60.
+ 1 APPPATH\Views\patient\my_appointments.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $doctors', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:17:19 --> ErrorException: Undefined variable $doctors
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 60.
+ 1 APPPATH\Views\patient\my_appointments.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $doctors', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:18:33 --> ErrorException: Undefined variable $doctors
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 60.
+ 1 APPPATH\Views\patient\my_appointments.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $doctors', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 60)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:20:40 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:20:57 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:20:58 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:20:58 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:21:00 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:21:03 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:21:05 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:24:21 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:24:22 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:24:22 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 10:24:23 --> ErrorException: Undefined array key "doctor_name"
+[Method: GET, Route: my_appointments]
+in APPPATH\Views\patient\my_appointments.php on line 31.
+ 1 APPPATH\Views\patient\my_appointments.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "doctor_name"', 'D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('D:\\Web-project\\health-bridge\\app\\Views\\patient\\my_appointments.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('patient/my_appointments', [], true)
+ 5 APPPATH\Controllers\AppointmentController.php(36): view('patient/my_appointments', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->myAppointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-24 11:44:15 --> Error: Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+[Method: POST, Route: book]
+in APPPATH\Controllers\AppointmentController.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AppointmentController->book()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AppointmentController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\Web-project\\health-bridge\\public\\index.php')

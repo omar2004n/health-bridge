@@ -12,8 +12,11 @@ $routes->post('/auth/store', 'Auth::store');
 $routes->get('logout', 'Auth::logout');
 
 // View and create appointments
-$routes->get('/appointments', 'AppointmentController::index');
-$routes->post('/appointments/book', 'AppointmentController::book');
+$routes->get('/my_appointments', 'AppointmentController::myAppointments');
+$routes->get('/new_appointment', 'AppointmentController::bookingAppointment');
+$routes->post('/book', 'AppointmentController::book');
+
+
 
 
 

@@ -3,7 +3,6 @@
 <?= $this->section('content') ?>
 
 <div class="container py-5">
-
     <h2 class="text-center text-white mb-4">Book an Appointment</h2>
 
     <!-- Flash messages for error and success -->
@@ -15,7 +14,7 @@
     <?php endif; ?>
 
     <!-- Appointment booking form -->
-    <form action="/appointment/book" method="post" class="p-4 bg-light shadow rounded">
+    <form action="/book" method="post" class="p-4 bg-light shadow rounded">
         <?= csrf_field() ?>
 
         <h3 class="mb-4 text-center text-primary">Book an Appointment</h3>
@@ -45,7 +44,8 @@
 
         <div class="mb-3">
             <label for="time_slot" class="form-label">Available Time Slots:</label>
-            <select name="time_slot" id="time_slot" class="form-select" required>
+            <select type="time" name="time_slot" id="time_slot" class="form-control" required>
+                <option value="" disabled selected>Select a Time Slot</option>
                 <?php
                 $startTime = strtotime($open_time);
                 $endTime = strtotime($close_time);
@@ -53,9 +53,10 @@
                 while ($startTime < $endTime) {
                     $timeSlot = date('H:i:s', $startTime); // Backend format
                     $displayTime = date('H:i', $startTime); // Frontend format
-                    $isDisabled = in_array($timeSlot, $reserved_times) ? 'disabled' : '';
-                    echo "<option value=\"$timeSlot\" $isDisabled>$displayTime</option>";
-                    $startTime = strtotime('+1 hour', $startTime); // Increment by 1 hour
+                    $isReserved = in_array($timeSlot, $reserved_times); // Check if slot is reserved
+                    $disabled = $isReserved ? 'disabled' : '';
+                    echo "<option value=\"$timeSlot\" $disabled>$displayTime</option>";
+                    $startTime = strtotime('+30 minutes', $startTime); // Increment by 1 hour
                 }
                 ?>
             </select>
@@ -64,8 +65,8 @@
         <div class="mb-3">
             <label for="note" class="form-label">Note (Optional):</label>
             <textarea 
-                name="note" 
-                id="note" 
+                name="notes" 
+                id="notes" 
                 class="form-control" 
                 rows="4" 
                 placeholder="Add any special requests or information..."></textarea>
@@ -75,7 +76,6 @@
             <button type="submit" class="btn btn-primary">Book Appointment</button>
         </div>
     </form>
-
 </div>
 
 <?= $this->endSection() ?>

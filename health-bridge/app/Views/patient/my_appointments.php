@@ -2,91 +2,132 @@
 
 <?= $this->section('content') ?>
 
-<!-- Flash messages for success or error -->
-<?php if (session()->get('error')): ?>
-    <div class="alert alert-danger mb-3"><?= session()->get('error') ?></div>
-<?php endif; ?>
-<?php if (session()->get('success')): ?>
-    <div class="alert alert-success mb-3"><?= session()->get('success') ?></div>
-<?php endif; ?>
+<div class="container py-5">
+    <h2 class="text-center text-white mb-4">My Appointments</h2>
 
-<h3 class="mb-4">My Appointments</h3>
+    <!-- Flash messages for success or error -->
+    <?php if (session()->get('success')): ?>
+        <div class="alert alert-success mb-3"><?= session()->get('success') ?></div>
+    <?php endif; ?>
+    <?php if (session()->get('error')): ?>
+        <div class="alert alert-danger mb-3"><?= session()->get('error') ?></div>
+    <?php endif; ?>
 
-<!-- Existing Appointments Table -->
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Doctor</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if (count($appointments) > 0): ?>
-                <?php foreach ($appointments as $appointment): ?>
-                    <tr>
-                        <td><?= $appointment['name'] ?> (<?= $appointment['specialty'] ?>)</td>
-                        <td><?= $appointment['appointment_date'] ?></td>
-                        <td><?= $appointment['time_slot'] ?></td>
-                        <td><?= ucfirst($appointment['status']) ?></td>
-                        <td>
-                            <!-- Implement edit/delete actions as needed -->
-                            <a href="#" class="btn btn-warning btn-sm">Edit</a>
-                            <a href="#" class="btn btn-danger btn-sm">Delete</a>
-                        </td>
-                    </tr>
+    <!-- Filters Section -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <input type="text" id="searchBar" class="form-control" placeholder="Search...">
+        </div>
+        <div class="col-md-3">
+            <select id="doctorFilter" class="form-select">
+                <option value="">All Doctors</option>
+                <?php foreach (array_unique(array_column($appointments, 'doctor_name')) as $doctor): ?>
+                    <option value="<?= esc($doctor) ?>"><?= esc($doctor) ?></option>
                 <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="5" class="text-center">No appointments booked.</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <select id="statusFilter" class="form-select">
+                <option value="">All Status</option>
+                <option value="pending">Pending</option>
+                <option value="confirmed">Confirmed</option>
+                <option value="cancelled">Cancelled</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Appointments Table -->
+    <?php if (!empty($appointments) && is_array($appointments)): ?>
+        <div class="table-responsive">
+            <table id="appointmentsTable" class="table table-striped table-bordered text-center bg-light">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Specialty</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach ($appointments as $appointment): ?>
+                        <tr>
+                            <td class="doctor"><?= esc($appointment['doctor_name']) ?></td>
+                            <td class="specialty"><?= esc($appointment['specialty']) ?></td>
+                            <td><?= date('d-m-Y', strtotime($appointment['appointment_date'])) ?></td>
+                            <td><?= date('H:i', strtotime($appointment['time_slot'])) ?></td>
+                            <td class="status">
+                                <span class="badge 
+                                    <?php 
+                                        if ($appointment['status'] === 'pending') echo 'bg-warning'; 
+                                        elseif ($appointment['status'] === 'cancelled') echo 'bg-danger';
+                                        else echo 'bg-success';
+                                    ?>">
+                                    <?= ucfirst($appointment['status']) ?>
+                                </span>
+                            </td>
+                            <td class="notes"><?= esc($appointment['notes'] ?? 'No notes') ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
+    <?php else: ?>
+        <div class="alert alert-info text-center">You have no appointments yet.</div>
+    <?php endif; ?>
+
+    <!-- Link to book a new appointment -->
+    <div class="text-center mt-4">
+        <a href="/new_appointment" class="btn btn-primary">Book a New Appointment</a>
+    </div>
 </div>
 
-<!-- Form to Book a New Appointment -->
-<h4 class="mt-5">Book a New Appointment</h4>
-<form action="/appointments/book" method="POST" class="p-4 bg-light shadow rounded">
-    <?= csrf_field() ?>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchBar = document.getElementById("searchBar");
+        const doctorFilter = document.getElementById("doctorFilter");
+        const statusFilter = document.getElementById("statusFilter");
+        const tableRows = document.querySelectorAll("#appointmentsTable tbody tr");
 
-    <div class="mb-3">
-        <label for="doctor_id" class="form-label">Select Doctor:</label>
-        <select name="doctor_id" id="doctor_id" class="form-select" required>
-            <option value="" disabled selected>Select a Doctor</option>
-            <?php foreach ($doctors as $doctor): ?>
-                <option value="<?= $doctor['id'] ?>"><?= $doctor['name'] ?> (<?= $doctor['specialty'] ?>)</option>
-            <?php endforeach; ?>
-        </select>
-    </div>
+        // Function to filter rows
+        function filterRows() {
+            const searchTerm = searchBar.value.toLowerCase();
+            const doctorValue = doctorFilter.value.toLowerCase();
+            const statusValue = statusFilter.value.toLowerCase();
 
-    <div class="mb-3">
-        <label for="appointment_date" class="form-label">Select Date:</label>
-        <input type="date" name="appointment_date" id="appointment_date" class="form-control" min="<?= date('Y-m-d') ?>" required>
-    </div>
+            tableRows.forEach(row => {
+                const doctor = row.querySelector(".doctor").textContent.toLowerCase();
+                const specialty = row.querySelector(".specialty").textContent.toLowerCase();
+                const status = row.querySelector(".status span").textContent.toLowerCase();
+                const notes = row.querySelector(".notes").textContent.toLowerCase();
 
-    <div class="mb-3">
-        <label for="time_slot" class="form-label">Select Time Slot:</label>
-        <select name="time_slot" id="time_slot" class="form-select" required>
-            <!-- Populate available time slots dynamically here -->
-            <option value="">Select a Time Slot</option>
-            <?php foreach ($availableTimeSlots as $time): ?>
-                <option value="<?= $time ?>"><?= $time ?></option>
-            <?php endforeach; ?>
-        </select>
-    </div>
+                // Search matches any of the fields
+                const matchesSearch = 
+                    doctor.includes(searchTerm) || 
+                    specialty.includes(searchTerm) || 
+                    status.includes(searchTerm) || 
+                    notes.includes(searchTerm);
 
-    <div class="mb-3">
-        <label for="note" class="form-label">Note (Optional):</label>
-        <textarea name="note" id="note" class="form-control" rows="4" placeholder="Add any special requests or information..."></textarea>
-    </div>
+                // Filter matches doctor and status filters
+                const matchesDoctor = !doctorValue || doctor.includes(doctorValue);
+                const matchesStatus = !statusValue || status.includes(statusValue);
 
-    <div class="d-grid">
-        <button type="submit" class="btn btn-primary">Book Appointment</button>
-    </div>
-</form>
+                // Show row if all conditions match, hide otherwise
+                if (matchesSearch && matchesDoctor && matchesStatus) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        }
+
+        // Attach event listeners
+        searchBar.addEventListener("input", filterRows);
+        doctorFilter.addEventListener("change", filterRows);
+        statusFilter.addEventListener("change", filterRows);
+    });
+</script>
+
 
 <?= $this->endSection() ?>

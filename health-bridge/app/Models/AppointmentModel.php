@@ -13,9 +13,9 @@ class AppointmentModel extends Model
         'doctor_id',
         'patient_id',
         'appointment_date',
-        'appointment_time',
+        'time_slot',
         'status',
-        'reason',
+        'notes',
         'created_at',
         'updated_at'
     ];
