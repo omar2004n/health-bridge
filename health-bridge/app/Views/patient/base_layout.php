@@ -33,8 +33,8 @@
                 <div class="navbar-nav w-100">
                     <a href="/dashboard" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="/my_appointments" class="nav-item nav-link"><i class="fa fa-calendar-check me-2"></i>Appointments</a>
-                    <a href="/medical-history" class="nav-item nav-link"><i class="fa fa-file-medical me-2"></i>Medical History</a>
-                    <a href="/prescriptions" class="nav-item nav-link"><i class="fa fa-prescription me-2"></i>Prescriptions</a>
+                    <a href="/profile" class="nav-item nav-link"><i class="fa fa-file-medical me-2"></i>Profile</a>
+                    <a href="/contacts" class="nav-item nav-link"><i class="fa fa-prescription me-2"></i>Contacts</a>
                     <a href="/settings" class="nav-item nav-link"><i class="fa fa-cogs me-2"></i>Settings</a>
                 </div>
             </nav>

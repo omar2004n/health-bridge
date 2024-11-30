@@ -17,8 +17,14 @@ $routes->get('/new_appointment', 'AppointmentController::bookingAppointment');
 $routes->post('/book', 'AppointmentController::book');
 
 
-
-
-
 $routes->get('admin-dashboard', 'Admin::dashboard');
 $routes->get('/dashboard', 'DashboardController::index');
+
+$routes->get('/profile', 'ProfileController::index');
+$routes->post('/profile/update', 'ProfileController::update');
+
+$routes->get('/settings', 'PatientSettingsController::index');
+$routes->post('/settings/update', 'PatientSettingsController::update');
+
+$routes->get('/contacts', 'ContactController::index');
+$routes->post('/contacts/submit', 'ContactController::submit');
