@@ -1,0 +1,136 @@
+ERROR - 2024-11-27 10:46:49 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'health_bridge', 3306, '', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-27 10:46:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+[Method: POST, Route: authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-27 10:48:25 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'health_bridge', 3306, '', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-27 10:48:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+[Method: POST, Route: authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(90): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Auth->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-27 11:28:35 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin-patients]
+in APPPATH\Views\admin\patients.php on line 32.
+ 1 APPPATH\Views\admin\patients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\patients.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\patients.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/patients', [], true)
+ 5 APPPATH\Controllers\Admin.php(38): view('admin/patients', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->patients()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-27 11:28:56 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin-patients]
+in APPPATH\Views\admin\patients.php on line 32.
+ 1 APPPATH\Views\admin\patients.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\patients.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\patients.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/patients', [], true)
+ 5 APPPATH\Controllers\Admin.php(38): view('admin/patients', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->patients()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')

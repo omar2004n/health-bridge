@@ -1,0 +1,190 @@
+CRITICAL - 2024-11-25 12:15:10 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 12:17:41 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 12:19:05 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 12:19:08 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 12:19:18 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 12:19:21 --> Error: Call to a member function setShared() on null
+[Method: GET, Route: admin-dashboard]
+in APPPATH\Controllers\BaseController.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 18:56:45 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin-dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 18:57:13 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin-dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 18:59:33 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin-dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 18:59:35 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: GET, Route: admin-dashboard]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 19:59:46 --> ErrorException: Undefined array key "specialization"
+[Method: GET, Route: admin-doctors]
+in APPPATH\Views\admin\doctors.php on line 32.
+ 1 APPPATH\Views\admin\doctors.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "specialization"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/doctors', [], true)
+ 5 APPPATH\Controllers\Admin.php(20): view('admin/doctors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->doctors()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 20:02:20 --> ErrorException: Undefined array key "phone_number"
+[Method: GET, Route: admin-doctors]
+in APPPATH\Views\admin\doctors.php on line 35.
+ 1 APPPATH\Views\admin\doctors.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_number"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/doctors', [], true)
+ 5 APPPATH\Controllers\Admin.php(20): view('admin/doctors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->doctors()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 20:02:23 --> ErrorException: Undefined array key "phone_number"
+[Method: GET, Route: admin-doctors]
+in APPPATH\Views\admin\doctors.php on line 35.
+ 1 APPPATH\Views\admin\doctors.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_number"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/doctors', [], true)
+ 5 APPPATH\Controllers\Admin.php(20): view('admin/doctors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->doctors()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 20:03:48 --> ErrorException: Undefined array key "phone_number"
+[Method: GET, Route: admin-doctors]
+in APPPATH\Views\admin\doctors.php on line 35.
+ 1 APPPATH\Views\admin\doctors.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "phone_number"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php', 35)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\doctors.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/doctors', [], true)
+ 5 APPPATH\Controllers\Admin.php(20): view('admin/doctors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->doctors()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 20:19:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "appointments/index.php"
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appointments/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('appointments/index', [], true)
+ 3 APPPATH\Controllers\Admin.php(22): view('appointments/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-25 20:20:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "appointement/index.php"
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('appointement/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('appointement/index', [], true)
+ 3 APPPATH\Controllers\Admin.php(22): view('appointement/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')

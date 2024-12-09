@@ -10,6 +10,18 @@ class PatientModel extends Model
     protected $primaryKey = 'id';
     protected $allowedFields = ['user_id', 'phone', 'gender', 'address', 'birth_date'];
 
-    // Disable automatic timestamps, as patients might not need them
-    protected $useTimestamps = false;
+    // Optionally enable soft deletes
+    protected $useSoftDeletes = false;
+
+    /**
+     * Get all patients with their user details (name).
+     *
+     * @return array
+     */
+    public function getPatientsWithUserDetails()
+    {
+        return $this->select('patients.id, patients.phone, patients.gender, patients.address, patients.birth_date, users.name')
+            ->join('users', 'users.id = patients.user_id')
+            ->findAll();
+    }
 }

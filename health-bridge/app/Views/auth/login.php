@@ -111,6 +111,7 @@
         </div>
         <h2 class="login-title">Login</h2>
         <form action="/authenticate" method="POST">
+        <?= csrf_field(); ?>    
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" required>

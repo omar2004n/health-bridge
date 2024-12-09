@@ -1,0 +1,1725 @@
+CRITICAL - 2024-11-28 11:50:32 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointements]
+in APPPATH\Views\admin\appointement.php on line 24.
+ 1 APPPATH\Views\admin\appointement.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointement', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 11:53:54 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointements]
+in APPPATH\Views\admin\appointement.php on line 32.
+ 1 APPPATH\Views\admin\appointement.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointement', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 11:53:56 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointements]
+in APPPATH\Views\admin\appointement.php on line 32.
+ 1 APPPATH\Views\admin\appointement.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointement', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 11:54:37 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointements]
+in APPPATH\Views\admin\appointement.php on line 32.
+ 1 APPPATH\Views\admin\appointement.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php', 32)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointement.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointement', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointement', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:15:45 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(36): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:15:50 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(36): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:36:04 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:37:17 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:37:19 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:37:24 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:40:08 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:40:11 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:46:13 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:46:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:46:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:46:13 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:46:20 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:46:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:46:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:46:20 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:47:00 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:47:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:00 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:47:00 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:47:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:00 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:47:01 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:47:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:01 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:47:01 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:47:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:01 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 12:47:07 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 12:47:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 12:47:07 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:14:58 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:14:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:14:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:14:58 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:14:59 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:14:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:14:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:14:59 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:16:12 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:16:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:16:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:16:12 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:16:13 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:16:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:16:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:16:13 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(25): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:18:21 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:18:24 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:19:18 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:19:22 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(28): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:20:22 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(22): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:20:27 --> BadMethodCallException: Call to undefined method App\Models\AppointmentModel::getAppointmentsWithDetails
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Admin.php(22): CodeIgniter\Model->__call('getAppointmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:21:17 --> CodeIgniter\Filters\Exceptions\FilterException: "auth" filter must have a matching alias defined.
+[Method: POST, Route: admin/confirm_appointment]
+in SYSTEMPATH\Filters\Filters.php on line 495.
+ 1 SYSTEMPATH\Filters\Filters.php(495): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('auth')
+ 2 SYSTEMPATH\Filters\Filters.php(547): CodeIgniter\Filters\Filters->enableFilter('auth', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\Filters\Filters->enableFilters([...], 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:36:40 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:36:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:36:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:36:40 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:42:31 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:42:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:42:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:42:31 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:47:48 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:47:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointements]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:47:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:47:48 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointements()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+ERROR - 2024-11-28 13:51:51 --> mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause' in C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appoint...', 0)
+#1 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appoint...')
+#2 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appoint...')
+#3 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appoint...', Array, false)
+#4 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp_\htdocs\health\health_bridge\health-bridge\app\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+#6 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+#7 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp_\htdocs\health\health_bridge\health-bridge\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp_\htdocs\health\health_bridge\health-bridge\system\rewrite.php(44): require_once('C:\\xampp_\\htdoc...')
+#13 {main}
+CRITICAL - 2024-11-28 13:51:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+[Method: GET, Route: admin-appointments]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 2 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:51:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 4 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:51:51 --> [Caused by] mysqli_sql_exception: Unknown column 'doctors.user_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `appointments`.`id` as `appointment_id`, `appointments`.`appointment_date`, `appointments`.`time_slot`, `appointments`.`notes`, `appointments`.`status`, `patient_users`.`name` as `patient_name`, `doctor_users`.`name` as `doctor_name`
+FROM `appointments`
+JOIN `patients` ON `patients`.`id` = `appointments`.`patient_id`
+JOIN `users` as `patient_users` ON `patient_users`.`id` = `patients`.`user_id`
+JOIN `doctors` ON `doctors`.`id` = `appointments`.`doctor_id`
+JOIN `users` as `doctor_users` ON `doctor_users`.`id` = `doctors`.`user_id`', [], false)
+ 5 APPPATH\Models\AppointmentModel.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Admin.php(26): App\Models\AppointmentModel->getAppointmentsWithNames()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:58:35 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointments]
+in APPPATH\Views\admin\appointment.php on line 33.
+ 1 APPPATH\Views\admin\appointment.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointment.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointment', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')
+CRITICAL - 2024-11-28 13:58:41 --> ErrorException: Undefined array key "appointment_id"
+[Method: GET, Route: admin-appointments]
+in APPPATH\Views\admin\appointment.php on line 33.
+ 1 APPPATH\Views\admin\appointment.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "appointment_id"', 'C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointment.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\app\\Views\\admin\\appointment.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/appointment', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('admin/appointment', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->appointments()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp_\\htdocs\\health\\health_bridge\\health-bridge\\public\\index.php')

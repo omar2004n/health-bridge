@@ -14,6 +14,6 @@ class PatientInterfaceController extends BaseController
         if (!$session->get('isLoggedIn')) {
             return redirect()->to('/login');
         }
-        return view('base_layout', $data);
+        return view('patient/base_layout', $data);
     }
 }

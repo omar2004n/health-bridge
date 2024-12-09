@@ -71,55 +71,42 @@ class Auth extends Controller
         }
         return view('auth/login'); // Load the login view
     }
-
     public function authenticate()
-{
-    $session = session();
-    $model = new UserModel();
+    {
+        $session = session();
+        $model = new UserModel();
 
-    // Validation rules
-    $rules = [
-        'email' => 'required|valid_email',
-        'password' => 'required|min_length[6]',
-    ];
+        // Validation rules
+        $rules = [
+            'email' => 'required|valid_email',
+            'password' => 'required|min_length[6]',
+        ];
 
-    if ($this->validate($rules)) {
-        $email = $this->request->getVar('email');
-        $password = $this->request->getVar('password');
+        if ($this->validate($rules)) {
+            $email = $this->request->getVar('email');
+            $password = $this->request->getVar('password');
 
-        // Retrieve user from database
-        $user = $model->where('email', $email)->first();
+            // Retrieve user from database
+            $user = $model->where('email', $email)->first();
 
-        if ($user && password_verify($password, $user['password'])) {
-            // Set session data
-            $session->set([
-                'isLoggedIn' => true,
-                'userId' => $user['id'],
-                'userRole' => $user['role'] ?? 'user', // Default to 'user' if no role is set
-            ]);
+            if ($user && password_verify($password, $user['password'])) {
+                $session->set([
+                    'isLoggedIn' => true,
+                    'userId' => $user['id'],
+                    'userRole' => $user['role'] ?? 'user',
+                ]);
 
-            // Redirect based on user role
-            if ($user['role'] === 'admin') {
-                return redirect()->to('/admin-dashboard'); // Admin dashboard route
-            } elseif ($user['role'] === 'patient') {
-                return redirect()->to('/dashboard'); // Patient appointment route
+                // Redirect based on user role
+                return redirect()->to($user['role'] === 'admin' ? '/admin-dashboard' : '/dashboard');
             } else {
-                // Handle unexpected roles
-                $session->setFlashdata('msg', 'Role not recognized. Contact support.');
-                return redirect()->to('/login');
+                $session->setFlashdata('msg', 'Invalid email or password.');
             }
         } else {
-            // Flash error message for invalid credentials
-            $session->setFlashdata('msg', 'Invalid email or password.');
+            $session->setFlashdata('errors', $this->validator->getErrors());
         }
-    } else {
-        // Flash validation errors
-        $session->setFlashdata('errors', $this->validator->getErrors());
+
+        return redirect()->to('/login')->withInput();
     }
-
-    return redirect()->to('/login')->withInput(); // Redirect back to login with input data
-}
-
 
     public function logout()
     {

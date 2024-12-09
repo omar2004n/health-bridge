@@ -3,116 +3,122 @@
 namespace App\Controllers;
 
 use App\Models\AdminModel;
+use App\Models\AppointmentModel;
+use App\Models\DoctorModel;
+use App\Models\PatientModel;
 use CodeIgniter\Controller;
 use Config\App;
 
-class Admin extends Controller
+class Admin extends BaseController
 {
 
+    public function appointments(){
+        
+    $appointmentModel = new AppointmentModel();
 
+    // Fetch all appointments
+    $data['appointments'] = $appointmentModel->findAll();
 
-
-    public function dashboard(){
-    
-        // Pass the admin data to the view
-        return view('admin/dashboard');
+    return view('admin/appointment', $data);
     }
 
-//     public function save()
-//     {
-//         // Get the data from the POST request
-//         $username = $this->request->getPost('username');
-//         $email = $this->request->getPost('email');
-//         $datenaissance = $this->request->getPost('datenaissance');
-//         $city = $this->request->getPost('city');
-//         $gender = $this->request->getPost('gender');
-//         $specialisation = $this->request->getPost('specialisation');
-//         $qualification = $this->request->getPost('qualification');
-//         $experience = $this->request->getPost('experience');
-//         $password = $this->request->getPost('password');
-//         $confpassword = $this->request->getPost('confpassword');
 
-//         // Validate the form data (basic validation)
-//         if ($password !== $confpassword) {
-//             return redirect()->back()->with('fail', 'Password and confirm password do not match.');
-//         }
+    //confirm appointements 
 
-//         // Hash the password before storing it
-//         // $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+    public function confirmAppointment()
+    {
+        $appointmentId = $this->request->getPost('appointment_id');
+        if ($appointmentId) {
+            $appointmentModel = new AppointmentModel();
+            $appointmentModel->update($appointmentId, ['status' => 'confirmed']);
+            return redirect()->to('admin-appointments')->with('message', 'Appointment confirmed successfully.');
+        }
+        return redirect()->to('admin-appointments')->with('error', 'Failed to confirm the appointment.');
+    }
 
-//         // Prepare the data to be saved in the database
-//         $data = [
-//             'username' => $username,
-//             'email' => $email,
-//             'datenaissance' => $datenaissance,
-//             'city' => $city,
-//             'gender' => $gender,
-//             'specialisation' => $specialisation,
-//             'qualification' => $qualification,
-//             'experience' => $experience,
-//             'password' => $password,
-//         ];
+        //cancel Appoitements 
 
-//         // Load the UserModel to interact with the database
-//         $adminModel = new AdminModel();
+        public function cancelAppointment()
+        {
+            $appointmentId = $this->request->getPost('appointment_id');
+        
+            if ($appointmentId) {
+                $appointmentModel = new AppointmentModel();
+        
+                // Update the status of the appointment to canceled
+                $updated = $appointmentModel->update($appointmentId, ['status' => 'canceled']);
+        
+                if ($updated) {
+                    return redirect()->to('/admin-appointments')->with('message', 'Appointment canceled successfully.');
+                } else {
+                    return redirect()->to('/admin-appointments')->with('error', 'Failed to cancel the appointment.');
+                }
+            }
+        
+            return redirect()->to('/admin-appointments')->with('error', 'Appointment ID is missing.');
+        }
+        
 
-//         // Insert the data into the users table
-//         if ($adminModel->insert($data)) {
-//             return redirect()->to('/Adminregister')->with('success', 'You are now registered successfully.');
-//         } else {
-//             return redirect()->back()->with('fail', 'Something went wrong. Please try again.');
-//         }
-//     }
 
-//    // Process the login form submission
-//    public function check()
-//    {
-//        // Validate the login form
-//        $validation = $this->validate([
-//            'email' => [
-//                'rules' => 'required|valid_email|is_not_unique[admin.email]',
-//                'errors' => [
-//                    'required' => 'Email is required.',
-//                    'valid_email' => 'Please enter a valid email address.',
-//                    'is_not_unique' => 'This email is not registered in our system.',
-//                ],
-//            ],
-//            'password' => [
-//                'rules' => 'required|min_length[5]',
-//                'errors' => [
-//                    'required' => 'Password is required.',
-//                    'min_length' => 'Password must be at least 5 characters long.',
-//                ],
-//            ]
-//        ]);
+    //fetch doctores in pages doctors 
+    public function doctors(){
+        
+        $model = new DoctorModel();
+        $data['doctors'] = $model->findAll();
+    
+        // Pass the admin data to the view
+        return view('admin/doctors',$data);
+    }
+  
 
-//        // If validation fails, return back with validation errors
-//        if (!$validation) {
-//            return view('admin/login', ['validation' => $this->validator]);
-//        }
 
-//        // Retrieve email and password from form
-//        $email = $this->request->getPost('email');
-//        $password = $this->request->getPost('password');
+    public function dashboard()
+    {
+        // Instantiate the model
+        $appointmentModel = new AppointmentModel();
+        $doctorModel = new DoctorModel(); // Assuming you have this model
 
-//        // Load the model to check user credentials
-//        $usermodel = new \App\Models\AdminModel();
-//        $user = $usermodel->where('email', $email)->first();
+        // Get the number of today's appointments
+        $data['today_appointments'] = $appointmentModel->countTodayAppointments();
 
-//        // If user exists and password matches
-//        if ($user && $user['password'] == $password) {
-//            // Successful login, set session data
-//            session()->set([
-//                'user_id' => $user['id'],
-//                'email' => $user['email'],
-//                'logged_in' => true,
-//            ]);
+        // Get the number doctores
+        $data['total_doctors'] = $doctorModel->countAll();
 
-//            return redirect()->to('/Admindashboard');  // Redirect to dashboard
-//        } else {
-//            // Invalid credentials
-//            session()->setFlashdata('error', 'Invalid email or password');
-//            return redirect()->to('/Adminlogin');
-//        }
-//    }
+        $data['month_appointments'] = $appointmentModel->countMonthlyAppointments();
+
+        // Pass the data to the view
+        return view('admin/dashboard', $data);
+    }
+
+
+  
+    public function updatePatient($id)
+    {
+        $patientModel = new \App\Models\PatientModel();
+    
+        // Get the POST data
+        $data = [
+            'phone'      => $this->request->getPost('phone'),
+            'gender'     => $this->request->getPost('gender'),
+            'address'    => $this->request->getPost('address'),
+            'birth_date' => $this->request->getPost('birth_date'),
+        ];
+    
+        // Log data to debug
+        log_message('debug', 'Updating patient with data: ' . json_encode($data));
+    
+        if ($patientModel->update($id, $data)) {
+            $updatedPatient = $patientModel->find($id);
+    
+            return $this->response->setJSON([
+                'success' => true,
+                'patient' => $updatedPatient,
+            ]);
+        } else {
+            // Log failure
+            log_message('error', 'Failed to update patient with ID: ' . $id);
+            return $this->response->setJSON(['success' => false]);
+        }
+    }
+    
 }

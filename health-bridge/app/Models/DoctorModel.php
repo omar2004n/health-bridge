@@ -13,7 +13,7 @@ class DoctorModel extends Model
         'name',
         'specialty',
         'email',
-        'phone_number',
+        'phone',
         'created_at',
         'updated_at'
     ];
@@ -26,6 +26,11 @@ class DoctorModel extends Model
      * @param string $specialty
      * @return array
      */
+
+     public function countAll() {
+        return $this->db->table('doctors')->countAllResults();
+    }
+    
     public function getDoctorsBySpecialty($specialty)
     {
         return $this->where('specialty', $specialty)->findAll();
