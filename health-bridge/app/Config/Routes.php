@@ -41,6 +41,7 @@ $routes->post('/admin-doctors/update', 'DoctorController::update');
 $routes->post('/admin-doctors/add', 'DoctorController::add');
 $routes->delete('/admin-doctors/delete/(:num)', 'DoctorController::delete/$1');
 $routes->get('/admin-doctors', 'Admin::doctors');
+$routes->get('/admin-chart', 'Admin::chart');
 
 
 

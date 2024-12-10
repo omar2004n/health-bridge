@@ -12,6 +12,17 @@ use Config\App;
 class Admin extends BaseController
 {
 
+    public function chart() {
+        $appointmentModel = new AppointmentModel();
+
+        $dailyPatients = $appointmentModel->getDailyPatientData(); // Implement this method
+        $data['chart_labels'] = array_keys($dailyPatients); // Dates or days
+        $data['chart_data'] = array_values($dailyPatients); // Patient cou
+
+        return view('admin/chart',$data);
+     
+    }
+
     public function appointments(){
 
     $appointmentModel = new AppointmentModel();

@@ -67,7 +67,7 @@
                     <a href="admin-appointments" class="nav-item nav-link"><i class="fa fa-calendar-check  me-2"></i>Appointment</a>
                     <a href="admin-patients" class="nav-item nav-link"><i class="fa fa-user me-2"></i> Patients</a>
                     
-                    <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
+                    <a href="admin-chart" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     
                 </div>
             </nav>
