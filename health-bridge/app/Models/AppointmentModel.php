@@ -43,6 +43,18 @@ class AppointmentModel extends Model
      * @param int $patientId
      * @return array
      */
+    public function getAppointmentsWithDetails()
+    {
+        return $this->select('appointments.id, appointments.appointment_date, appointments.time_slot, appointments.notes, appointments.status, 
+                             patients.id as patient_id, users.name as patient_name, 
+                             doctors.id as doctor_id, doctors.name as doctor_name')
+            ->join('patients', 'appointments.patient_id = patients.id')
+            ->join('users', 'patients.user_id = users.id') // Join users for patient names
+            ->join('doctors', 'appointments.doctor_id = doctors.id')
+            ->findAll();
+    }
+    
+
     public function getAppointmentsByPatient($patientId)
     {
         return $this->where('patient_id', $patientId)->findAll();
@@ -86,4 +98,22 @@ class AppointmentModel extends Model
             'appointment_time' => $time
         ])->first();
     }
+
+    public function getDailyPatientData()
+{
+    // Fetch data grouped by day
+    $query = $this->db->table('appointments')
+                      ->select('DATE(appointment_date) as date, COUNT(*) as count')
+                      ->groupBy('DATE(appointment_date)')
+                      ->orderBy('DATE(appointment_date)', 'ASC')
+                      ->get();
+    
+    $result = [];
+    foreach ($query->getResult() as $row) {
+        $result[$row->date] = $row->count;
+    }
+
+    return $result; // ['2024-12-05' => 10, '2024-12-06' => 8, ...]
+}
+
 }

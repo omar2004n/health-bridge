@@ -34,6 +34,25 @@ class DoctorController extends BaseController
 }
 
 
+        public function add()
+        {
+            $doctorModel = new DoctorModel();
+
+            $data = [
+                'name' => $this->request->getPost('name'),
+                'specialty' => $this->request->getPost('specialty'),
+                'email' => $this->request->getPost('email'),
+                'phone' => $this->request->getPost('phone'),
+            ];
+
+            if ($doctorModel->insert($data)) {
+                return redirect()->to('/admin-doctors')->with('message', 'Doctor added successfully.');
+            } else {
+                return redirect()->to('/admin-doctors')->with('error', 'Failed to add doctor.');
+            }
+        }
+
+
     // Handle delete doctor logic
     public function delete($id)
     {

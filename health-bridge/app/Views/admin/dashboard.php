@@ -48,8 +48,6 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
 </div>
 <!-- Sale & Revenue End -->
@@ -57,27 +55,75 @@
 <!-- Sales Chart Start -->
 <div class="container-fluid pt-4 px-4">
     <div class="row g-4">
-        <div class="col-sm-12 col-xl-6">
+        <!-- Patients Chart -->
+        <div class="col-sm-12 col-xl-8 mx-auto">
             <div class="bg-light text-center rounded p-4">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h6 class="mb-0">Worldwide Sales</h6>
-                    <a href="">Show All</a>
+                    <h6 class="mb-0 text-center mx-auto">Patients Per Day</h6>
                 </div>
-                <canvas id="worldwide-sales"></canvas>
-            </div>
-        </div>
-
-        <div class="col-sm-12 col-xl-6">
-            <div class="bg-light text-center rounded p-4">
-                <div class="d-flex align-items-center justify-content-between mb-4">
-                    <h6 class="mb-0">Sales & Revenue</h6>
-                    <a href="">Show All</a>
-                </div>
-                <canvas id="salse-revenue"></canvas>
+                <canvas id="patients-chart" class="mx-auto" width="600" height="300"></canvas>
             </div>
         </div>
     </div>
 </div>
 <!-- Sales Chart End -->
+
+<!-- Chart.js Script -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // Dynamic Data (Fetch this from the backend)
+    const labels = <?= json_encode($chart_labels) ?>; // Days or dates
+    const data = <?= json_encode($chart_data) ?>;    // Patient count
+
+    const ctx = document.getElementById('patients-chart').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Patients Per Day',
+                data: data,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 2,
+                pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgba(54, 162, 235, 1)'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top'
+                },
+                title: {
+                    display: true,
+                    text: 'Daily Patient Data'
+                }
+            },
+            scales: {
+                x: {
+                    grid: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Days'
+                    }
+                },
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Patients'
+                    }
+                }
+            }
+        }
+    });
+</script>
 
 <?= $this->endSection() ?>

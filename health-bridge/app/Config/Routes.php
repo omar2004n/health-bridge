@@ -38,8 +38,12 @@ $routes->post('/admin-patients/delete/(:num)', 'PatientController::delete/$1');
 
 //doctor operation
 $routes->post('/admin-doctors/update', 'DoctorController::update');
+$routes->post('/admin-doctors/add', 'DoctorController::add');
 $routes->delete('/admin-doctors/delete/(:num)', 'DoctorController::delete/$1');
 $routes->get('/admin-doctors', 'Admin::doctors');
+
+
+
 
 
 $routes->get('admin-dashboard', 'Admin::dashboard');
@@ -47,3 +51,12 @@ $routes->get('admin-dashboard', 'Admin::dashboard');
 $routes->get('admin-appointments', 'Admin::appointments');
 $routes->get('admin-doctors', 'Admin::doctors');
 $routes->get('/dashboard', 'DashboardController::index');
+
+$routes->get('/profile', 'ProfileController::index');
+$routes->post('/profile/update', 'ProfileController::update');
+
+$routes->get('/settings', 'PatientSettingsController::index');
+$routes->post('/settings/update', 'PatientSettingsController::update');
+
+$routes->get('/contacts', 'ContactController::index');
+$routes->post('/contacts/submit', 'ContactController::submit');

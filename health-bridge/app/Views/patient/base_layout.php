@@ -26,15 +26,15 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">John Doe</h6>
+                        <h6 class="mb-0"><strong><?= session()->get('username')?></strong> </h6>
                         <span>Patient</span>
                     </div>
                 </div>
                 <div class="navbar-nav w-100">
                     <a href="/dashboard" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
                     <a href="/my_appointments" class="nav-item nav-link"><i class="fa fa-calendar-check me-2"></i>Appointments</a>
-                    <a href="/medical-history" class="nav-item nav-link"><i class="fa fa-file-medical me-2"></i>Medical History</a>
-                    <a href="/prescriptions" class="nav-item nav-link"><i class="fa fa-prescription me-2"></i>Prescriptions</a>
+                    <a href="/profile" class="nav-item nav-link"><i class="fa fa-file-medical me-2"></i>Profile</a>
+                    <a href="/contacts" class="nav-item nav-link"><i class="fa fa-prescription me-2"></i>Contacts</a>
                     <a href="/settings" class="nav-item nav-link"><i class="fa fa-cogs me-2"></i>Settings</a>
                 </div>
             </nav>
@@ -71,7 +71,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="<?= base_url('admin/img/user.jpg') ?>" alt="Patient Image" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">John Doe</span>
+                            <span class="d-none d-lg-inline-flex"><strong><?= session()->get('username')?></strong></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="profile.html" class="dropdown-item">My Profile</a>

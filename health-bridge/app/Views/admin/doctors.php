@@ -3,7 +3,12 @@
 <?= $this->section('content') ?>
 
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Doctors</h2>
+    <h2 class="text-center mb-4">Doctors Management</h2>
+
+    <!-- Add New Doctor Button -->
+    <div class="text-end mb-3">
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addDoctorModal">Add New Doctor</button>
+    </div>
 
     <div class="table-responsive">
         <table class="table table-striped table-bordered table-hover align-middle">
@@ -59,40 +64,43 @@
     </div>
 </div>
 
-<!-- Edit Modal -->
-<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+<!-- Add Doctor Modal -->
+<div class="modal fade" id="addDoctorModal" tabindex="-1" aria-labelledby="addDoctorModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-        <form method="post" action="<?= base_url('/admin-doctors/update'); ?>">
-    <?= csrf_field(); ?>
-    <input type="hidden" name="id" id="edit-id">
-    <div class="modal-body">
-        <div class="mb-3">
-            <label for="edit-name" class="form-label">Name</label>
-            <input type="text" name="name" id="edit-name" class="form-control" required>
-        </div>
-        <div class="mb-3">
-            <label for="edit-specialty" class="form-label">Specialty</label>
-            <input type="text" name="specialty" id="edit-specialty" class="form-control" required>
-        </div>
-        <div class="mb-3">
-            <label for="edit-email" class="form-label">Email</label>
-            <input type="email" name="email" id="edit-email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-            <label for="edit-phone" class="form-label">Phone</label>
-            <input type="text" name="phone" id="edit-phone" class="form-control" required>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Save Changes</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-    </div>
-</form>
-
+            <form method="post" action="<?= base_url('/admin-doctors/add'); ?>">
+                <?= csrf_field(); ?>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addDoctorModalLabel">Add New Doctor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="add-name" class="form-label">Name</label>
+                        <input type="text" name="name" id="add-name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-specialty" class="form-label">Specialty</label>
+                        <input type="text" name="specialty" id="add-specialty" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-email" class="form-label">Email</label>
+                        <input type="email" name="email" id="add-email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-phone" class="form-label">Phone</label>
+                        <input type="text" name="phone" id="add-phone" class="form-control" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Add Doctor</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
+
 <script>
     // Populate the edit modal with doctor data
     const editModal = document.getElementById('editModal');
@@ -112,6 +120,5 @@
         document.getElementById('edit-phone').value = phone;
     });
 </script>
-
 
 <?= $this->endSection() ?>

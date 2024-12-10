@@ -13,13 +13,14 @@ class Admin extends BaseController
 {
 
     public function appointments(){
-        
+
     $appointmentModel = new AppointmentModel();
+    $appointments = $appointmentModel->getAppointmentsWithDetails();
 
-    // Fetch all appointments
-    $data['appointments'] = $appointmentModel->findAll();
+    return view('admin/appointment', [
+        'appointments' => $appointments
+    ]);
 
-    return view('admin/appointment', $data);
     }
 
 
@@ -46,7 +47,7 @@ class Admin extends BaseController
                 $appointmentModel = new AppointmentModel();
         
                 // Update the status of the appointment to canceled
-                $updated = $appointmentModel->update($appointmentId, ['status' => 'canceled']);
+                $updated = $appointmentModel->update($appointmentId, ['status' => 'cancelled']);
         
                 if ($updated) {
                     return redirect()->to('/admin-appointments')->with('message', 'Appointment canceled successfully.');
@@ -71,25 +72,26 @@ class Admin extends BaseController
     }
   
 
-
     public function dashboard()
     {
-        // Instantiate the model
+        // Instantiate models
         $appointmentModel = new AppointmentModel();
-        $doctorModel = new DoctorModel(); // Assuming you have this model
-
-        // Get the number of today's appointments
+        $doctorModel = new DoctorModel();
+    
+        // Fetch key metrics
         $data['today_appointments'] = $appointmentModel->countTodayAppointments();
-
-        // Get the number doctores
         $data['total_doctors'] = $doctorModel->countAll();
-
         $data['month_appointments'] = $appointmentModel->countMonthlyAppointments();
-
+    
+        // Fetch patient data for the chart
+        $dailyPatients = $appointmentModel->getDailyPatientData(); // Implement this method
+        $data['chart_labels'] = array_keys($dailyPatients); // Dates or days
+        $data['chart_data'] = array_values($dailyPatients); // Patient counts
+    
         // Pass the data to the view
         return view('admin/dashboard', $data);
     }
-
+    
 
   
     public function updatePatient($id)

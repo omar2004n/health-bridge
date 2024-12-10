@@ -93,6 +93,7 @@ class Auth extends Controller
                 $session->set([
                     'isLoggedIn' => true,
                     'userId' => $user['id'],
+                    'username' => $user['name'],
                     'userRole' => $user['role'] ?? 'user',
                 ]);
 

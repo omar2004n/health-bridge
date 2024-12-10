@@ -53,7 +53,7 @@
                         <div class="bg-success rounded-circle border border-2 border-white position-absolute end-0 bottom-0 p-1"></div>
                     </div>
                     <div class="ms-3">
-                        <h6 class="mb-0">omar</h6>
+                        <h6 class="mb-0"><strong><?= session()->get('username') ?></strong></h6>
                         <span>Admin</span>
                     </div>
                 </div>
@@ -68,15 +68,7 @@
                     <a href="admin-patients" class="nav-item nav-link"><i class="fa fa-user me-2"></i> Patients</a>
                     
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="signin.html" class="dropdown-item">Sign In</a>
-                            <a href="signup.html" class="dropdown-item">Sign Up</a>
-                            <a href="404.html" class="dropdown-item">404 Error</a>
-                            <a href="blank.html" class="dropdown-item">Blank Page</a>
-                        </div>
-                    </div>
+                    
                 </div>
             </nav>
         </div>
@@ -163,7 +155,7 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                             <img class="rounded-circle me-lg-2" src="admin/img/user.jpg" alt="" style="width: 40px; height: 40px;">
-                            <span class="d-none d-lg-inline-flex">omar</span>
+                            <span class="d-none d-lg-inline-flex"><strong><?= session()->get('username') ?></strong></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end bg-light border-0 rounded-0 rounded-bottom m-0">
                             <a href="#" class="dropdown-item">My Profile</a>
@@ -257,23 +249,24 @@
             <!-- Recent Sales End -->
 
 
-            <!-- Footer Start -->
+                <!-- Footer Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
-                    <div class="row">
+                    <div class="row align-items-center">
+                        <!-- Left Section: Footer Text -->
                         <div class="col-12 col-sm-6 text-center text-sm-start">
-                            &copy; <a href="#">Cabinet</a>, All Right Reserved. 
+                            &copy; <a href="#">Cabinet</a>, All Rights Reserved.
                         </div>
+                        <!-- Right Section: Credits -->
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                            Designed By <a href="https://htmlcodex.com">Ilyas&Omar</a>
-                        </br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ilyas</a>
+                            Designed By <a href="https://htmlcodex.com">Ilyas & Omar</a><br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">Ilyas</a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Footer End -->
+
         </div>
         <!-- Content End -->
 
